@@ -20,15 +20,17 @@
 
 <style lang="scss" scoped>
 .product-list{
+  height: 90vh;
   display: flex;
   gap: 2rem;
   justify-content: center;
+  align-items: center;
   .card{
-  width: 200px;
+  width: 300px;
   text-align: center;
   img{
     width: 100%;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
     border-radius: 5px;    
   }

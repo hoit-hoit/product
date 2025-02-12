@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <h1>맛있게 먹자</h1>
+    <h1>맛있게 먹자♡</h1>
     <div class="router-link">
       <router-link to="/">상품목록</router-link>
       <router-link to="/cart">장바구니</router-link>
@@ -30,6 +30,9 @@ const selectedClick = (list)=>{
 
 <style lang="scss" scoped>
 
+h1{
+  font-size: 2rem;
+}
 nav{
   display: flex;
   justify-content: space-between;

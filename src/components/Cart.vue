@@ -2,7 +2,7 @@
   <div class="cart">
     <OpenModal :isOpen="isOpenModal" @closeModal="closeModal"/>
     <div class="cart-list">
-      <h2>장바구니</h2>
+      <h2>＊장바구니</h2>
       <h3 v-if="cart.length===0">장바구니가 비었습니다.</h3>
       <ul v-else>
         <li v-for="list in cart" :key="list.id">
@@ -15,7 +15,7 @@
       </ul>
     </div>
     <div class="cart-add">
-      <h2>주문내역</h2>
+      <h2>＊주문내역</h2>
       <div class="total">
         <p>상품금액 : {{totalPrice}}원</p>
         <p>배송비 : {{shippingFee===0  ? "무료" : `${shippingFee}원`}} </p>
@@ -74,8 +74,15 @@ const payment = computed(()=>{
 </script>
 
 <style lang="scss" scoped>
+h2{
+  padding: 10px;
+}
+h3{
+  padding: 30px;
+}
   .cart{
     display: flex;
+    height: 80vh;
     padding: 2rem 5rem; 
     gap: 1rem;
     div{
